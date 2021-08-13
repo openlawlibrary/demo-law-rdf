@@ -11,6 +11,7 @@
     <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code.</rdfs:label>
     <dct:title>Stockbridge-Munsee Tribal Code.</dct:title>
     <dct:creator>Stockbridge-Munsee Community, Wisconsin</dct:creator>
+    <dct:isPartOf>https://law.mohican.com</dct:isPartOf>
     <dct:available>2021-02-28</dct:available>
     <dct:tableOfContents>
       Title GOV — Government (§§ GOV.01.01 – GOV.04.05);

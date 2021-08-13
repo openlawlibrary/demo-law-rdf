@@ -9,7 +9,6 @@
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/">
-    <owl:sameAs rdf:resource="https://www.narf.org/nill/triballaw/us/nsn/mohican/council/" />
     <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Law Library</rdfs:label>
     <rdfs:comment xml:lang="en">This page is an electronic version of a tribal code or constitution from the National Indian Law Library.</rdfs:comment>
     <dct:title>Stockbridge-Munsee Tribal Law Library</dct:title>

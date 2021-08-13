@@ -11,6 +11,7 @@
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code/BUS">
     <dct:title>Title BUS — Business</dct:title>
     <dct:creator>Stockbridge-Munsee Community, Wisconsin</dct:creator>
+    <dct:isPartOf>https://law.mohican.com/us/nsn/mohican/council/code</dct:isPartOf>
     <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code/BUS</uwlaw:url>
   </rdf:Description>
 </rdf:RDF>

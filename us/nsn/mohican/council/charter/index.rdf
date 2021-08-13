@@ -11,6 +11,7 @@
     <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</rdfs:label>
     <dct:title>Stockbridge-Munsee Federal Corporate Charter</dct:title>
     <dct:creator>Stockbridge-Munsee Community, Wisconsin</dct:creator>
+    <dct:isPartOf>https://law.mohican.com</dct:isPartOf>
     <dct:available>2021-02-28</dct:available>
     <dct:subject>Stockbridge-Munsee Community, Wisconsin</dct:subject>
     <dct:rights>Public Domain</dct:rights>

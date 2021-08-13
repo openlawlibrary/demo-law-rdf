@@ -10,6 +10,7 @@
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code/ADM.01.01">
     <dct:title>Section ADM.01.01 — Authority, Purpose, Jurisdiction And Definitions</dct:title>
+    <dct:isPartOf>https://law.mohican.com/us/nsn/mohican/council/code/ADM.01</dct:isPartOf>
     <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code/ADM.01.01</uwlaw:url>
   </rdf:Description>
 </rdf:RDF>

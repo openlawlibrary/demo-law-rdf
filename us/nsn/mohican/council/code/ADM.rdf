@@ -10,6 +10,7 @@
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code/ADM">
     <dct:title>Title ADM — Government Administration</dct:title>
+    <dct:isPartOf>https://law.mohican.com/us/nsn/mohican/council/code</dct:isPartOf>
     <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code/ADM</uwlaw:url>
     <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/ADM.01"/>
   </rdf:Description>

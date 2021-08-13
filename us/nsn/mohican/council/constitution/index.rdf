@@ -11,6 +11,7 @@
     <rdfs:label xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</rdfs:label>
     <dct:title>Constitution and By-Laws of the Stockbridge-Munsee Community</dct:title>
     <dct:creator>Stockbridge-Munsee Community, Wisconsin</dct:creator>
+    <dct:isPartOf>https://law.mohican.com</dct:isPartOf>
     <dct:available>2021-02-28</dct:available>
     <dct:subject>Stockbridge-Munsee Community, Wisconsin</dct:subject>
     <dct:rights>Public Domain</dct:rights>

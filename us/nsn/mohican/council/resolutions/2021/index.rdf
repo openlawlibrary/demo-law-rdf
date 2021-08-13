@@ -11,6 +11,7 @@
     <rdfs:label xml:lang="en">2021 Council Resolutions</rdfs:label>
     <dct:title>2021 Council Resolutions</dct:title>
     <dct:available>2021-02-28</dct:available>
+    <dct:isPartOf>https://law.mohican.com/us/nsn/mohican/council/resolutions</dct:isPartOf>
     <dct:subject>Stockbridge-Munsee Community, Wisconsin</dct:subject>
     <dct:rights>Public Domain</dct:rights>
     <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/resolutions/2021</uwlaw:url>
