@@ -12,6 +12,5 @@
     <dc:title>Title ADM — Government Administration</dc:title>
     <dc:isPartOf>https://law.mohican.com/us/nsn/mohican/council/code</dc:isPartOf>
     <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/ADM.01</dc:hasPart>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/ADM.01"/>
   </rdf:Description>
 </rdf:RDF>

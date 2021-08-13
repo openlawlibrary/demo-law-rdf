@@ -40,9 +40,5 @@
     <oll:dateEffective>0001-01-02</oll:dateEffective>
     <oll:dateRecentThrough>2021-01-28</oll:dateRecentThrough>
     <oll:lastCodifiedResolution>021-21</oll:lastCodifiedResolution>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/ADM"/>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/BUS"/>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/DMR"/>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/EDU"/>
   </rdf:Description>
 </rdf:RDF>

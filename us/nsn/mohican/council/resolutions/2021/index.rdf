@@ -16,7 +16,5 @@
     <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/021-21.rdf</dc:hasPart>
     <dc:subject>Stockbridge-Munsee Community, Wisconsin</dc:subject>
     <dc:rights>Public Domain</dc:rights>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/017-21"/>
-    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/021-21"/>
   </rdf:Description>
 </rdf:RDF>
