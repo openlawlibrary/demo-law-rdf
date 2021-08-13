@@ -4,16 +4,16 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:dbp="http://dbpedia.org/property/"
 	xmlns:dbo="http://dbpedia.org/ontology/"
-	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dc="http://purl.org/dc/terms/"
   xmlns:uwlaw="https://repository.law.wisc.edu/s/uwlaw/ontology"
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/017-21">
     <rdfs:label xml:lang="en">Resolution No. 017-21</rdfs:label>
-    <dct:title>Resolution No. 017-21</dct:title>
-    <dct:available>2021-02-28</dct:available>
-    <dct:isPartOf>https://law.mohican.com/us/nsn/mohican/council/resolutions/2021</dct:isPartOf>
-    <dct:subject>Stockbridge-Munsee Community, Wisconsin</dct:subject>
-    <dct:rights>Public Domain</dct:rights>
+    <dc:title>Resolution No. 017-21</dc:title>
+    <dc:available>2021-02-28</dc:available>
+    <dc:isPartOf>https://law.mohican.com/us/nsn/mohican/council/resolutions/2021</dc:isPartOf>
+    <dc:subject>Stockbridge-Munsee Community, Wisconsin</dc:subject>
+    <dc:rights>Public Domain</dc:rights>
     <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/017-21</uwlaw:url>
   </rdf:Description>
 </rdf:RDF>
