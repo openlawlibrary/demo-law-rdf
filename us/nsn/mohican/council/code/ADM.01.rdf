@@ -5,14 +5,13 @@
 	xmlns:dbp="http://dbpedia.org/property/"
 	xmlns:dbo="http://dbpedia.org/ontology/"
 	xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:uwlaw="https://repository.law.wisc.edu/s/uwlaw/ontology"
+  xmlns:oll="https://open.law/us/ngo/oll/ontology"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code/ADM.01">
     <dc:title>Chapter ADM.01 — Procedures Ordinance</dc:title>
     <dc:isPartOf>https://law.mohican.com/us/nsn/mohican/council/code/ADM</dc:isPartOf>
     <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/ADM.01.01</dc:hasPart>
-    <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code/ADM.01</uwlaw:url>
     <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/ADM.01.01"/>
   </rdf:Description>
 </rdf:RDF>

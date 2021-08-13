@@ -5,7 +5,7 @@
 	xmlns:dbp="http://dbpedia.org/property/"
 	xmlns:dbo="http://dbpedia.org/ontology/"
 	xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:uwlaw="https://repository.law.wisc.edu/s/uwlaw/ontology"
+  xmlns:oll="https://open.law/us/ngo/oll/ontology"
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/constitution">
     <rdfs:label xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</rdfs:label>
@@ -15,8 +15,7 @@
     <dc:available>2021-02-28</dc:available>
     <dc:subject>Stockbridge-Munsee Community, Wisconsin</dc:subject>
     <dc:rights>Public Domain</dc:rights>
-    <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code</uwlaw:url>
-    <uwlaw:dateEffective>1937-11-18</uwlaw:dateEffective>
-    <uwlaw:dateRecentThrough>2021-01-28</uwlaw:dateRecentThrough>
+    <oll:dateEffective>1937-11-18</oll:dateEffective>
+    <oll:dateRecentThrough>2021-01-28</oll:dateRecentThrough>
   </rdf:Description>
 </rdf:RDF>

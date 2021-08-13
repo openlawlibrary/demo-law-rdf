@@ -5,13 +5,12 @@
 	xmlns:dbp="http://dbpedia.org/property/"
 	xmlns:dbo="http://dbpedia.org/ontology/"
 	xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:uwlaw="https://repository.law.wisc.edu/s/uwlaw/ontology"
+  xmlns:oll="https://open.law/us/ngo/oll/ontology"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:schema="http://schema.org/" >
   <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code/DMR">
     <dc:title>Title DMR — Domestic Relations</dc:title>
     <dc:creator>Stockbridge-Munsee Community, Wisconsin</dc:creator>
     <dc:isPartOf>https://law.mohican.com/us/nsn/mohican/council/code</dc:isPartOf>
-    <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code/DMR</uwlaw:url>
   </rdf:Description>
 </rdf:RDF>
