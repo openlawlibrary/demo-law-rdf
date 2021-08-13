@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:uwlaw="https://repository.law.wisc.edu/s/uwlaw/ontology"
+	xmlns:schema="http://schema.org/" >
+  <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code">
+    <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code.</rdfs:label>
+    <dct:title>Stockbridge-Munsee Tribal Code.</dct:title>
+    <dct:creator>Stockbridge-Munsee Community, Wisconsin</dct:creator>
+    <dct:available>2021-02-28</dct:available>
+    <dct:tableOfContents>
+      Title GOV — Government (§§ GOV.01.01 – GOV.04.05);
+      Title ADM — Government Administration (§§ ADM.01.01 – ADM.02.05);
+      Title MEM — Tribal Membership (§§ MEM.01.01 – MEM.01.09);
+      Title TCT — Tribal Court (§§ TCT.01.01 – TCT.06.05);
+      Title YAE — Youth And Elders (§§ YAE.01.01 – YAE.11.26);
+      Title EDU — Education (§§ EDU.01.01 – EDU.02.16);
+      Title DMR — Domestic Relations (§§ DMR.01.01 – DMR.04.06);
+      Title EMP — Employment (§§ EMP.01.01 – EMP.05.09);
+      Title PRP — Property (§§ PRP.01.01 – PRP.05.53);
+      Title ENV — Environment (§§ ENV.01.01 – ENV.06.21);
+      Title GMG — Gaming (§§ GMG.01.01 – GMG.02.12);
+      Title SAF — Safety And Public Health (§§ SAF.01.01 – SAF.06.12);
+      Title UTL — Utilities And Public Improvements (§§ UTL.01.01 – UTL.01.24);
+      Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
+      Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
+      Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);
+    </dct:tableOfContents>
+    <dct:subject>Stockbridge-Munsee Community, Wisconsin</dct:subject>
+    <dct:rights>Public Domain</dct:rights>
+    <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code</uwlaw:url>
+    <uwlaw:dateEffective>0001-01-02</uwlaw:dateEffective>
+    <uwlaw:dateRecentThrough>2021-01-28</uwlaw:dateRecentThrough>
+    <uwlaw:lastCodifiedResolution>021-21</uwlaw:lastCodifiedResolution>
+    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/ADM"/>
+    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/BUS"/>
+    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/DMR"/>
+    <owl:imports rdf:resource="https://law.mohican.com/us/nsn/mohican/council/code/EDU"/>
+  </rdf:Description>
+</rdf:RDF>
