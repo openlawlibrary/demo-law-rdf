@@ -31,6 +31,10 @@
       Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
       Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);
     </dct:tableOfContents>
+    <dct:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/ADM</dct:hasPart>
+    <dct:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/BUS</dct:hasPart>
+    <dct:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/DMR</dct:hasPart>
+    <dct:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/EDU</dct:hasPart>
     <dct:subject>Stockbridge-Munsee Community, Wisconsin</dct:subject>
     <dct:rights>Public Domain</dct:rights>
     <uwlaw:url>https://law.mohican.com/us/nsn/mohican/council/code</uwlaw:url>
