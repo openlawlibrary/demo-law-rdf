@@ -13,5 +13,6 @@
     <rdfs:comment xml:lang="en">This page is an electronic version of a tribal code or constitution from the Stockbridge-Munsee Tribal Law Library.</rdfs:comment>
     <dc:title>Stockbridge-Munsee Tribal Law Library</dc:title>
     <dc:creator>Stockbridge-Munsee Community, Wisconsin</dc:creator>
+    <dc:publisher>Open Law Library</dc:publisher>
   </rdf:Description>
 </rdf:RDF>
