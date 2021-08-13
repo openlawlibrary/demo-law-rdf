@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:oll="https://open.law/us/ngo/oll/ontology"
+	xmlns:schema="http://schema.org/" >
+  <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/code">
+    <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code.</rdfs:label>
+    <dc:title>Stockbridge-Munsee Tribal Code.</dc:title>
+    <dc:creator>Stockbridge-Munsee Community, Wisconsin</dc:creator>
+    <dc:isPartOf>https://law.mohican.com</dc:isPartOf>
+    <dc:available>2021-02-28</dc:available>
+    <dc:tableOfContents>
+      Title GOV — Government (§§ GOV.01.01 – GOV.04.05);
+      Title ADM — Government Administration (§§ ADM.01.01 – ADM.02.05);
+      Title MEM — Tribal Membership (§§ MEM.01.01 – MEM.01.09);
+      Title TCT — Tribal Court (§§ TCT.01.01 – TCT.06.05);
+      Title YAE — Youth And Elders (§§ YAE.01.01 – YAE.11.26);
+      Title EDU — Education (§§ EDU.01.01 – EDU.02.16);
+      Title DMR — Domestic Relations (§§ DMR.01.01 – DMR.04.06);
+      Title EMP — Employment (§§ EMP.01.01 – EMP.05.09);
+      Title PRP — Property (§§ PRP.01.01 – PRP.05.53);
+      Title ENV — Environment (§§ ENV.01.01 – ENV.06.21);
+      Title GMG — Gaming (§§ GMG.01.01 – GMG.02.12);
+      Title SAF — Safety And Public Health (§§ SAF.01.01 – SAF.06.12);
+      Title UTL — Utilities And Public Improvements (§§ UTL.01.01 – UTL.01.24);
+      Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
+      Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
+      Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);
+    </dc:tableOfContents>
+    <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/ADM</dc:hasPart>
+    <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/BUS</dc:hasPart>
+    <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/DMR</dc:hasPart>
+    <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/code/EDU</dc:hasPart>
+    <dc:subject>Stockbridge-Munsee Community, Wisconsin</dc:subject>
+    <dc:rights>Public Domain</dc:rights>
+    <oll:dateEffective>0001-01-02</oll:dateEffective>
+    <oll:dateRecentThrough>2021-01-28</oll:dateRecentThrough>
+    <oll:lastCodifiedResolution>021-21</oll:lastCodifiedResolution>
+  </rdf:Description>
+</rdf:RDF>

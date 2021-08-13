@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:oll="https://open.law/us/ngo/oll/ontology"
+	xmlns:schema="http://schema.org/" >
+  <rdf:Description rdf:about="https://law.mohican.com/us/nsn/mohican/council/resolutions">
+    <rdfs:label xml:lang="en">Tribal Council Ordinance Resolutions.</rdfs:label>
+    <rdfs:comment xml:lang="en">Resolutions impacting the Stockbridge-Munsee Tribal Code are provided for reference and the convenience of Stockbridge-Munsee Tribal Law Library users. The list of resolutions for changes prior to codification in 2021 may be incomplete.</rdfs:comment>
+    <dc:title>Tribal Council Ordinance Resolutions.</dc:title>
+    <dc:available>2021-02-28</dc:available>
+    <dc:isPartOf>https://law.mohican.com</dc:isPartOf>
+    <dc:hasPart>https://law.mohican.com/us/nsn/mohican/council/resolutions/2021</dc:hasPart>
+    <dc:rights>Public Domain</dc:rights>
+  </rdf:Description>
+</rdf:RDF>
