@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.open.law/ontology#"
+     xml:base="http://www.open.law/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.open.law/ontology">
+        <rdfs:comment xml:lang="en">Open Law Library Ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">Open Law Library Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.open.law/ontology#dateEffective -->
+
+    <owl:ObjectProperty rdf:about="http://www.open.law/ontology#dateEffective">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.open.law/ontology#dateEffective"/>
+                <owl:someValuesFrom rdf:resource="http://www.open.law/ontology#Document"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">An effective date or as of date is the date upon which something is considered to take effect, which may be a past, present or future date.</rdfs:comment>
+        <rdfs:label xml:lang="en">Effective Date</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.open.law/ontology#dateRecentThrough -->
+
+    <owl:ObjectProperty rdf:about="http://www.open.law/ontology#dateRecentThrough">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.open.law/ontology#lastCodifiedResolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.open.law/ontology#Document"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">Date through which the document is up to date.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date Recent Through</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.open.law/ontology#lastCodifiedResolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.open.law/ontology#lastCodifiedResolution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.open.law/ontology#lastCodifiedResolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.open.law/ontology#Document"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">Identifier of the last codified resolution for the given codification.</rdfs:comment>
+        <rdfs:label xml:lang="en">Last Codified Resolution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.open.law/ontology#Attachment -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Attachment">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Charter -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Charter">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Code -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Code">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Constitution -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Constitution">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Document -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Document"/>
+    
+
+
+    <!-- http://www.open.law/ontology#Jurisdiction -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+    
+
+
+    <!-- http://www.open.law/ontology#Library -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Library"/>
+    
+
+
+    <!-- http://www.open.law/ontology#Ordinance -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Ordinance">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Resolution -->
+
+    <owl:Class rdf:about="http://www.open.law/ontology#Resolution">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.open.law/ontology#Attachment"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Charter"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Code"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Constitution"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Ordinance"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Resolution"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
