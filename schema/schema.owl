@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.open.law/ontology#"
-     xml:base="http://www.open.law/ontology"
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:oll="http://www.open.law/ontology#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.open.law/ontology">
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <Ontology rdf:about="http://www.open.law/ontology">
         <dc:title xml:lang="en">Open Law Library Ontology.</dc:title>
         <rdfs:comment xml:lang="en">Open Law Library Ontology contains built-in classes and properties that put together the basis of legal entities and their connections.</rdfs:comment>
         <rdfs:label xml:lang="en">Open Law Library Ontology</rdfs:label>
-    </owl:Ontology>
+    </Ontology>
     
 
 
@@ -29,472 +31,509 @@
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/coverage -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/format -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/issued -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/issued"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/language -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/modified -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/modified"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/relation -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/source -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/subject -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/type -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
     <!-- http://purl.org/dc/terms/abstract -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/accessRights -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessRights">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/accessRights">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/alternative -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/available -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/available">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/available">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/conformsTo -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-    </owl:AnnotationProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/coverage -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
         <rdfs:range rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
-    </owl:AnnotationProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/date -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/dateAccepted -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/dateCopyrighted -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/dateSubmitted -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/extent -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/extent">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/extent">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/format -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/format">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/hasFormat -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/hasPart -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasPart">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/hasPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/hasVersion -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/isFormatOf -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isFormatOf">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isFormatOf">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.open.law/ontology#Document"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/isPartOf -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/isReferencedBy -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/isReplacedBy -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/isRequiredBy -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isRequiredBy">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isRequiredBy">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/isVersionOf -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/language -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/language">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/medium -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/medium">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/medium">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/references -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/references">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Charter"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Constitution"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Ordinance"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Resolution"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/relation -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/relation">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/relation">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/replaces -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/requires -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/requires">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/requires">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/rights -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
-    </owl:AnnotationProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/source -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/spatial -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
-    </owl:AnnotationProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/tableOfContents -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Code"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/temporal -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/type -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
-    </owl:AnnotationProperty>
+    </AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/valid -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/valid">
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/valid">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-    </owl:AnnotationProperty>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </AnnotationProperty>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#isPartOf -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#isPartOf"/>
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#isPartOf"/>
     
 
 
@@ -518,6 +557,47 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.open.law/ontology#has_document -->
+
+    <ObjectProperty rdf:about="http://www.open.law/ontology#has_document">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
+        <rdfs:range rdf:resource="http://www.open.law/ontology#Document"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.open.law/ontology#has_law_library -->
+
+    <ObjectProperty rdf:about="http://www.open.law/ontology#has_law_library">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
+        <rdfs:range rdf:resource="http://www.open.law/ontology#Library"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.open.law/ontology#has_rights_statement -->
+
+    <ObjectProperty rdf:about="http://www.open.law/ontology#has_rights_statement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -528,152 +608,146 @@
 
     <!-- http://purl.org/dc/terms/alternative -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/alternative">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/alternative">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/available -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/available">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/available">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/date -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/dateAccepted -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/dateCopyrighted -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/dateSubmitted -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/modified">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/modified">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/terms/valid -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/valid">
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/valid">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://www.open.law/ontology#dateRecentThrough -->
 
-    <owl:DatatypeProperty rdf:about="http://www.open.law/ontology#dateRecentThrough">
+    <DatatypeProperty rdf:about="http://www.open.law/ontology#dateRecentThrough">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Code"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Date until which the law is up to date.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Recent Through</rdfs:label>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://www.open.law/ontology#effectiveDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.open.law/ontology#effectiveDate">
+    <DatatypeProperty rdf:about="http://www.open.law/ontology#effectiveDate">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">An effective date or as of date is the date upon which something is considered to take effect, which may be a past, present or future date.</rdfs:comment>
         <rdfs:label xml:lang="en">Effective Date</rdfs:label>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
     <!-- http://www.open.law/ontology#lastCodifiedDocument -->
 
-    <owl:DatatypeProperty rdf:about="http://www.open.law/ontology#lastCodifiedDocument">
+    <DatatypeProperty rdf:about="http://www.open.law/ontology#lastCodifiedDocument">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Code"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Identifier of the last codified document for the given codification.</rdfs:comment>
         <rdfs:label xml:lang="en">Last Codified Document</rdfs:label>
-    </owl:DatatypeProperty>
+    </DatatypeProperty>
     
 
 
@@ -688,82 +762,144 @@
     
 
 
+    <!-- http://purl.org/dc/terms/BibliographicResource -->
+
+    <Class rdf:about="http://purl.org/dc/terms/BibliographicResource"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Jurisdiction -->
+
+    <Class rdf:about="http://purl.org/dc/terms/Jurisdiction">
+        <equivalentClass rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+    <Class rdf:about="http://purl.org/dc/terms/LicenseDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <Class rdf:about="http://purl.org/dc/terms/Location">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LocationPeriodOrJurisdiction -->
+
+    <Class rdf:about="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <Class rdf:about="http://purl.org/dc/terms/PeriodOfTime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/RightsStatement -->
+
+    <Class rdf:about="http://purl.org/dc/terms/RightsStatement"/>
+    
+
+
     <!-- http://www.open.law/ontology#Attachment -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Attachment">
+    <Class rdf:about="http://www.open.law/ontology#Attachment">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:Class>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Charter -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Charter">
+    <Class rdf:about="http://www.open.law/ontology#Charter">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:Class>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Code -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Code">
+    <Class rdf:about="http://www.open.law/ontology#Code">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:Class>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Constitution -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Constitution">
+    <Class rdf:about="http://www.open.law/ontology#Constitution">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:Class>
+    </Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Docs -->
+
+    <Class rdf:about="http://www.open.law/ontology#Docs">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Document -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Document"/>
+    <Class rdf:about="http://www.open.law/ontology#Document">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+        <rdfs:comment></rdfs:comment>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Jurisdiction -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Jurisdiction">
+    <Class rdf:about="http://www.open.law/ontology#Jurisdiction">
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/available"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/dc/terms/available"/>
+                <minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minCardinality>
+            </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minCardinality>
+            </Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Library -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Library"/>
+    <Class rdf:about="http://www.open.law/ontology#Library"/>
     
 
 
     <!-- http://www.open.law/ontology#Ordinance -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Ordinance">
+    <Class rdf:about="http://www.open.law/ontology#Ordinance">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:Class>
+    </Class>
     
 
 
     <!-- http://www.open.law/ontology#Resolution -->
 
-    <owl:Class rdf:about="http://www.open.law/ontology#Resolution">
+    <Class rdf:about="http://www.open.law/ontology#Resolution">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
-    </owl:Class>
+    </Class>
     
 
 
@@ -780,804 +916,697 @@
 
     <!-- http://purl.org/dc/terms/ -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/">
         <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dc:modified>
         <dc:title xml:lang="en">DCMI Metadata Terms - other</dc:title>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Agent -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Agent">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Agent">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/AgentClass -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/AgentClass">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/AgentClass">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/BibliographicResource -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/BibliographicResource">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/BibliographicResource"/>
     
 
 
     <!-- http://purl.org/dc/terms/Box -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Box">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Box">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/DCMIType -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/DCMIType">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/DCMIType">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/DDC -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/DDC">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/DDC">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/FileFormat -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/FileFormat">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/FileFormat">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Frequency -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Frequency">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Frequency">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/IMT -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/IMT">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/IMT">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/ISO3166 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO3166">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/ISO3166">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/ISO639-2 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-2">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-2">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/ISO639-3 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-3">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-3">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Jurisdiction -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Jurisdiction">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Jurisdiction"/>
     
 
 
     <!-- http://purl.org/dc/terms/LCC -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCC">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/LCC">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/LCSH -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCSH">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/LCSH">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/LicenseDocument -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LicenseDocument">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/LicenseDocument"/>
     
 
 
     <!-- http://purl.org/dc/terms/LinguisticSystem -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LinguisticSystem">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/LinguisticSystem">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Location -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Location">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Location"/>
     
 
 
     <!-- http://purl.org/dc/terms/LocationPeriodOrJurisdiction -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
     
 
 
     <!-- http://purl.org/dc/terms/MESH -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MESH">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/MESH">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/MediaType -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MediaType">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/MediaType">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/MediaTypeOrExtent -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MediaTypeOrExtent">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/MediaTypeOrExtent">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/MethodOfAccrual -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MethodOfAccrual">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/MethodOfAccrual">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/MethodOfInstruction -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MethodOfInstruction">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/MethodOfInstruction">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/NLM -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/NLM">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/NLM">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Period -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Period">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Period">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/PeriodOfTime -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/PeriodOfTime">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/PeriodOfTime"/>
     
 
 
     <!-- http://purl.org/dc/terms/PhysicalMedium -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/PhysicalMedium">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/PhysicalMedium">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/PhysicalResource -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/PhysicalResource">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/PhysicalResource">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Point -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Point">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Point">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Policy -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Policy">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Policy">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/ProvenanceStatement -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ProvenanceStatement">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/ProvenanceStatement">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/RFC1766 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC1766">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/RFC1766">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/RFC3066 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC3066">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/RFC3066">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/RFC4646 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC4646">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/RFC4646">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/RFC5646 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC5646">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/RFC5646">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/RightsStatement -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RightsStatement">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/RightsStatement"/>
     
 
 
     <!-- http://purl.org/dc/terms/SizeOrDuration -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/SizeOrDuration">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/SizeOrDuration">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/Standard -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Standard">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/Standard">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/TGN -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/TGN">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/TGN">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/UDC -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/UDC">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/UDC">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/URI -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/URI">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/URI">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/W3CDTF -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/W3CDTF">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/W3CDTF">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/abstract -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/abstract">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
     <!-- http://purl.org/dc/terms/accessRights -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/accessRights">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/accessRights"/>
     
 
 
     <!-- http://purl.org/dc/terms/accrualMethod -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/accrualMethod">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/accrualMethod">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/accrualPeriodicity -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/accrualPolicy -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/accrualPolicy">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/accrualPolicy">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/alternative -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/alternative">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/alternative"/>
     
 
 
     <!-- http://purl.org/dc/terms/audience -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/audience">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/audience">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/available -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/available">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/available"/>
     
 
 
     <!-- http://purl.org/dc/terms/bibliographicCitation -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/bibliographicCitation">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
     <!-- http://purl.org/dc/terms/conformsTo -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/conformsTo">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/conformsTo"/>
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/contributor">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/coverage -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/coverage">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/coverage"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/created">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/creator">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/date -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/date">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
     <!-- http://purl.org/dc/terms/dateAccepted -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/dateAccepted">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/dateAccepted"/>
     
 
 
     <!-- http://purl.org/dc/terms/dateCopyrighted -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/dateCopyrighted">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/dateCopyrighted"/>
     
 
 
     <!-- http://purl.org/dc/terms/dateSubmitted -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/dateSubmitted">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/dateSubmitted"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/description">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/educationLevel -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/educationLevel">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/educationLevel">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/extent -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/extent">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/extent"/>
     
 
 
     <!-- http://purl.org/dc/terms/format -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/format">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/format"/>
     
 
 
     <!-- http://purl.org/dc/terms/hasFormat -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/hasFormat">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/hasFormat"/>
     
 
 
     <!-- http://purl.org/dc/terms/hasPart -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/hasPart">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/hasPart"/>
     
 
 
     <!-- http://purl.org/dc/terms/hasVersion -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/hasVersion">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/hasVersion"/>
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/identifier">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/identifier"/>
     
 
 
     <!-- http://purl.org/dc/terms/instructionalMethod -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/instructionalMethod">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/instructionalMethod">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/isFormatOf -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/isFormatOf">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/isFormatOf"/>
     
 
 
     <!-- http://purl.org/dc/terms/isPartOf -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/isPartOf">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/isPartOf"/>
     
 
 
     <!-- http://purl.org/dc/terms/isReferencedBy -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/isReferencedBy">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/isReferencedBy"/>
     
 
 
     <!-- http://purl.org/dc/terms/isReplacedBy -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/isReplacedBy">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/isReplacedBy"/>
     
 
 
     <!-- http://purl.org/dc/terms/isRequiredBy -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/isRequiredBy">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/isRequiredBy"/>
     
 
 
     <!-- http://purl.org/dc/terms/isVersionOf -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/isVersionOf">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/isVersionOf"/>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:DatatypeProperty>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/language -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/language">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/language"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/license">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/mediator -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/mediator">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/mediator">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/medium -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/medium">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/medium"/>
     
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/modified">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
     <!-- http://purl.org/dc/terms/provenance -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/provenance">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/provenance">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-09-20</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/publisher">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
     <!-- http://purl.org/dc/terms/references -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/references">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/references"/>
     
 
 
     <!-- http://purl.org/dc/terms/relation -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/relation">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/relation"/>
     
 
 
     <!-- http://purl.org/dc/terms/replaces -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/replaces">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/replaces"/>
     
 
 
     <!-- http://purl.org/dc/terms/requires -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/requires">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/requires"/>
     
 
 
     <!-- http://purl.org/dc/terms/rights -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/rights">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/rights"/>
     
 
 
     <!-- http://purl.org/dc/terms/rightsHolder -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/rightsHolder">
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/rightsHolder">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</dc:issued>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
     <!-- http://purl.org/dc/terms/source -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/source">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
     <!-- http://purl.org/dc/terms/spatial -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/spatial">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/spatial"/>
     
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/subject">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/subject"/>
     
 
 
     <!-- http://purl.org/dc/terms/tableOfContents -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/tableOfContents">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/tableOfContents"/>
     
 
 
     <!-- http://purl.org/dc/terms/temporal -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/temporal">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/temporal"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/title">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- http://purl.org/dc/terms/type -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/type">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/type"/>
     
 
 
     <!-- http://purl.org/dc/terms/valid -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/valid">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
-    </owl:NamedIndividual>
+    <NamedIndividual rdf:about="http://purl.org/dc/terms/valid"/>
     
 
 
     <!-- http://www.open.law/ontology#mohican_law_library -->
 
-    <owl:NamedIndividual rdf:about="http://www.open.law/ontology#mohican_law_library">
+    <NamedIndividual rdf:about="http://www.open.law/ontology#mohican_law_library">
         <rdf:type rdf:resource="http://www.open.law/ontology#Library"/>
         <dc:title xml:lang="en">Mohican Law Library</dc:title>
-    </owl:NamedIndividual>
+    </NamedIndividual>
     
 
 
@@ -1589,31 +1618,103 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
-        <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/BibliographicResource">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <rdfs:comment xml:lang="en">A book, article, or other documentary resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bibliographic Resource</rdfs:label>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
+        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
+        <rdfs:label xml:lang="en">License Document</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Location">
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">
+        <rdfs:label xml:lang="en">Location, Period, or Jurisdiction</rdfs:label>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">A location, period of time, or jurisdiction.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/PeriodOfTime">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <rdfs:comment xml:lang="en">An interval of time that is named or defined by its start and end dates.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Period of Time</rdfs:label>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/RightsStatement">
+        <rdfs:label xml:lang="en">Rights Statement</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/accessRights">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+        <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
         <dc:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Alternative Title</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/available">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Available</rdfs:label>
         <rdfs:comment xml:lang="en">Date that the resource became or will become available.</rdfs:comment>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/bibliographicCitation">
-        <dc:description xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</dc:description>
         <rdfs:label xml:lang="en">Bibliographic Citation</rdfs:label>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</dc:issued>
         <rdfs:comment xml:lang="en">A bibliographic reference for the resource.</rdfs:comment>
+        <dc:description xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/coverage">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/created">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/date">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date</rdfs:label>
@@ -1621,50 +1722,139 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateAccepted">
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dc:description>
-        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateCopyrighted">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Copyrighted</rdfs:label>
         <rdfs:comment xml:lang="en">Date of copyright of the resource.</rdfs:comment>
         <dc:description xml:lang="en">Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateSubmitted">
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a &apos;Date Submitted&apos; may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).</dc:description>
         <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a &apos;Date Submitted&apos; may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).</dc:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/extent">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/format">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/hasFormat">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/hasVersion">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
-        <dc:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</dc:description>
         <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isFormatOf">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isReplacedBy">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isRequiredBy">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/language">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/medium">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Modified</rdfs:label>
         <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/replaces">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/requires">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/source">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/spatial">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/tableOfContents">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/temporal">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label xml:lang="en">Title</rdfs:label>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/type">
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/valid">
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Valid</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
     </rdf:Description>
     
 
@@ -1679,22 +1869,22 @@
 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
+        <members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.open.law/ontology#Attachment"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Charter"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Code"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Constitution"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Ordinance"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Resolution"/>
-        </owl:members>
+        </members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
+        <members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
             <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
-        </owl:members>
+        </members>
     </rdf:Description>
 </rdf:RDF>
 
