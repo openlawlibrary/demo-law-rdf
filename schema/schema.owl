@@ -9,7 +9,8 @@
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:ontology="http://www.open.law/ontology#">
     <Ontology rdf:about="http://www.open.law/ontology">
         <dc:title xml:lang="en">Open Law Library Ontology.</dc:title>
         <rdfs:comment xml:lang="en">Open Law Library Ontology contains built-in classes and properties that put together the basis of legal entities and their connections.</rdfs:comment>
@@ -228,6 +229,7 @@
     <AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
     </AnnotationProperty>
     
 
@@ -237,6 +239,7 @@
     <AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </AnnotationProperty>
     
 
@@ -255,6 +258,7 @@
     <AnnotationProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </AnnotationProperty>
     
 
@@ -371,6 +375,7 @@
     <AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </AnnotationProperty>
     
 
@@ -509,6 +514,10 @@
     <AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </AnnotationProperty>
     
@@ -618,7 +627,6 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/available">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </DatatypeProperty>
     
 
@@ -641,9 +649,7 @@
 
     <!-- http://purl.org/dc/terms/date -->
 
-    <DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
-    </DatatypeProperty>
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -651,7 +657,6 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </DatatypeProperty>
     
 
@@ -668,7 +673,6 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </DatatypeProperty>
     
 
@@ -683,7 +687,6 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </DatatypeProperty>
     
 
@@ -698,12 +701,7 @@
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Docs"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
-    </DatatypeProperty>
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -715,11 +713,20 @@
     
 
 
+    <!-- http://www.open.law/ontology#Last_Codified_Document -->
+
+    <DatatypeProperty rdf:about="http://www.open.law/ontology#Last_Codified_Document">
+        <rdfs:comment xml:lang="en">Last codified document for this code document.</rdfs:comment>
+        <rdfs:label xml:lang="en">Last Codified Document</rdfs:label>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.open.law/ontology#dateRecentThrough -->
 
     <DatatypeProperty rdf:about="http://www.open.law/ontology#dateRecentThrough">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Code"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">Date until which the law is up to date.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Recent Through</rdfs:label>
@@ -1601,11 +1608,101 @@
     
 
 
-    <!-- http://www.open.law/ontology#mohican_law_library -->
+    <!-- http://www.open.law/ontology#Mohican_Code_Document -->
 
-    <NamedIndividual rdf:about="http://www.open.law/ontology#mohican_law_library">
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Code_Document">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Code"/>
+        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
+        <dcterms:title xml:lang="en">Mohican Code Document</dcterms:title>
+        <ontology:dateRecentThrough xml:lang="en">2021-01-28</ontology:dateRecentThrough>
+        <ontology:effectiveDate xml:lang="en">0001-01-02</ontology:effectiveDate>
+        <ontology:lastCodifiedDocument xml:lang="en">021-21</ontology:lastCodifiedDocument>
+        <dc:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dc:creator>
+        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/ADM</dcterms:hasPart>
+        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/BUS</dcterms:hasPart>
+        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/DMR</dcterms:hasPart>
+        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/EDU</dcterms:hasPart>
+        <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
+        <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
+        <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
+        <dcterms:tableOfContents xml:lang="en">Title GOV — Government (§§ GOV.01.01 – GOV.04.05);
+Title ADM — Government Administration (§§ ADM.01.01 – ADM.02.05);
+Title MEM — Tribal Membership (§§ MEM.01.01 – MEM.01.09);
+Title TCT — Tribal Court (§§ TCT.01.01 – TCT.06.05);
+Title YAE — Youth And Elders (§§ YAE.01.01 – YAE.11.26);
+Title EDU — Education (§§ EDU.01.01 – EDU.02.16);
+Title DMR — Domestic Relations (§§ DMR.01.01 – DMR.04.06);
+Title EMP — Employment (§§ EMP.01.01 – EMP.05.09);
+Title PRP — Property (§§ PRP.01.01 – PRP.05.53);
+Title ENV — Environment (§§ ENV.01.01 – ENV.06.21);
+Title GMG — Gaming (§§ GMG.01.01 – GMG.02.12);
+Title SAF — Safety And Public Health (§§ SAF.01.01 – SAF.06.12);
+Title UTL — Utilities And Public Improvements (§§ UTL.01.01 – UTL.01.24);
+Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
+Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
+Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
+        <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code.</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#Mohican_Constitution -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Constitution">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Constitution"/>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-28</dcterms:available>
+        <dcterms:title xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</dcterms:title>
+        <ontology:dateRecentThrough xml:lang="en">2021-01-28</ontology:dateRecentThrough>
+        <ontology:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-11-18</ontology:effectiveDate>
+        <dcterms:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:creator>
+        <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
+        <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
+        <rdfs:label xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#Mohican_Corporate_Charter -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Corporate_Charter">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Charter"/>
+        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
+        <dcterms:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dcterms:title>
+        <ontology:dateRecentThrough xml:lang="en">2021-01-28</ontology:dateRecentThrough>
+        <ontology:effectiveDate xml:lang="en">1996-06-21</ontology:effectiveDate>
+        <dcterms:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:creator>
+        <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
+        <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
+        <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
+        <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#Mohican_Jurisdiction -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Jurisdiction">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
+        <ontology:has_law_library rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
+        <dcterms:title xml:lang="en">Stockbridge-Munsee Jurisdiction</dcterms:title>
+        <rdfs:comment xml:lang="en">The jurisdiction of the Stockbridge-Munsee Community shall extend to all lands purchased, heretofore or hereafter, by the United States for the benefit of said Community.</rdfs:comment>
+        <rdfs:label xml:lang="en">Jurisdiction Of Stockbridge-Munsee</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#Mohican_Law_Library -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Law_Library">
         <rdf:type rdf:resource="http://www.open.law/ontology#Library"/>
-        <dc:title xml:lang="en">Mohican Law Library</dc:title>
+        <ontology:has_document rdf:resource="http://www.open.law/ontology#Mohican_Code_Document"/>
+        <ontology:has_document rdf:resource="http://www.open.law/ontology#Mohican_Constitution"/>
+        <ontology:has_document rdf:resource="http://www.open.law/ontology#Mohican_Corporate_Charter"/>
+        <dcterms:title xml:lang="en">Stockbridge-Munsee Tribal Law Library</dcterms:title>
+        <dc:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dc:creator>
+        <dc:publisher xml:lang="en">Open Law Library</dc:publisher>
+        <rdfs:comment xml:lang="en">This resource represents an electronic version of a tribal code and constitution from the Stockbridge-Munsee Tribal Law Library.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Law Library</rdfs:label>
     </NamedIndividual>
     
 
@@ -1628,13 +1725,13 @@
     <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
         <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
-        <rdfs:label xml:lang="en">License Document</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License Document</rdfs:label>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
@@ -1674,8 +1771,8 @@
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <dc:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Alternative Title</rdfs:label>
@@ -1787,8 +1884,8 @@
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/language">
@@ -1842,8 +1939,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label xml:lang="en">Title</rdfs:label>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/type">
@@ -1853,8 +1950,8 @@
         <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Valid</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     
 
