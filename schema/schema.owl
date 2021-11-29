@@ -820,10 +820,26 @@
     
 
 
+    <!-- http://www.open.law/ontology#Article -->
+
+    <Class rdf:about="http://www.open.law/ontology#Article">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#DocumentPart"/>
+    </Class>
+    
+
+
     <!-- http://www.open.law/ontology#Attachment -->
 
     <Class rdf:about="http://www.open.law/ontology#Attachment">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Chapter -->
+
+    <Class rdf:about="http://www.open.law/ontology#Chapter">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#DocumentPart"/>
     </Class>
     
 
@@ -869,15 +885,17 @@
     
 
 
+    <!-- http://www.open.law/ontology#DocumentPart -->
+
+    <Class rdf:about="http://www.open.law/ontology#DocumentPart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+    </Class>
+    
+
+
     <!-- http://www.open.law/ontology#Jurisdiction -->
 
     <Class rdf:about="http://www.open.law/ontology#Jurisdiction">
-        <rdfs:subClassOf>
-            <Restriction>
-                <onProperty rdf:resource="http://purl.org/dc/terms/available"/>
-                <minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minCardinality>
-            </Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
                 <onProperty rdf:resource="http://purl.org/dc/terms/title"/>
@@ -906,6 +924,30 @@
 
     <Class rdf:about="http://www.open.law/ontology#Resolution">
         <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#Document"/>
+    </Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Section -->
+
+    <Class rdf:about="http://www.open.law/ontology#Section">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#DocumentPart"/>
+    </Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Subchapter -->
+
+    <Class rdf:about="http://www.open.law/ontology#Subchapter">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#DocumentPart"/>
+    </Class>
+    
+
+
+    <!-- http://www.open.law/ontology#Title -->
+
+    <Class rdf:about="http://www.open.law/ontology#Title">
+        <rdfs:subClassOf rdf:resource="http://www.open.law/ontology#DocumentPart"/>
     </Class>
     
 
@@ -1608,20 +1650,63 @@
     
 
 
+    <!-- http://www.open.law/ontology#ADM -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#ADM">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Title"/>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/code/ADM</dcterms:identifier>
+        <dcterms:title xml:lang="en">Government Administration</dcterms:title>
+        <rdfs:label xml:lang="en">Title ADM — Government Administration</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#BUS -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#BUS">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Title"/>
+        <dc:title xml:lang="en">Business</dc:title>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/code/BUS</dcterms:identifier>
+        <rdfs:label xml:lang="en">Title BUS — Business</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#DMR -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#DMR">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Title"/>
+        <dc:title xml:lang="en">Domestic Relations</dc:title>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/code/DMR</dcterms:identifier>
+        <rdfs:label xml:lang="en">Title DMR — Domestic Relations</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#EDU -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#EDU">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Title"/>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/code/EDU</dcterms:identifier>
+        <dcterms:title xml:lang="en">Education</dcterms:title>
+        <rdfs:label xml:lang="en">Title EDU — Education</rdfs:label>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.open.law/ontology#Mohican_Code_Document -->
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Code_Document">
         <rdf:type rdf:resource="http://www.open.law/ontology#Code"/>
-        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
-        <dcterms:title xml:lang="en">Mohican Code Document</dcterms:title>
         <ontology:dateRecentThrough xml:lang="en">2021-01-28</ontology:dateRecentThrough>
         <ontology:effectiveDate xml:lang="en">0001-01-02</ontology:effectiveDate>
         <ontology:lastCodifiedDocument xml:lang="en">021-21</ontology:lastCodifiedDocument>
         <dc:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dc:creator>
-        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/ADM</dcterms:hasPart>
-        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/BUS</dcterms:hasPart>
-        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/DMR</dcterms:hasPart>
-        <dcterms:hasPart xml:lang="en">https://law.mohican.com/us/nsn/mohican/council/code/EDU</dcterms:hasPart>
+        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
+        <dcterms:hasPart rdf:resource="http://www.open.law/ontology#ADM"/>
+        <dcterms:hasPart rdf:resource="http://www.open.law/ontology#BUS"/>
+        <dcterms:hasPart rdf:resource="http://www.open.law/ontology#DMR"/>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/code</dcterms:identifier>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
         <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
@@ -1641,6 +1726,7 @@ Title UTL — Utilities And Public Improvements (§§ UTL.01.01 – UTL.01.24);
 Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
 Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
 Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
+        <dcterms:title xml:lang="en">Mohican Code Document</dcterms:title>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code.</rdfs:label>
     </NamedIndividual>
     
@@ -1650,13 +1736,16 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Constitution">
         <rdf:type rdf:resource="http://www.open.law/ontology#Constitution"/>
-        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-28</dcterms:available>
-        <dcterms:title xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</dcterms:title>
         <ontology:dateRecentThrough xml:lang="en">2021-01-28</ontology:dateRecentThrough>
         <ontology:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-11-18</ontology:effectiveDate>
+        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-28</dcterms:available>
         <dcterms:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:creator>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/charter</dcterms:identifier>
+        <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
         <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
+        <dcterms:title xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</dcterms:title>
         <rdfs:label xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</rdfs:label>
     </NamedIndividual>
     
@@ -1666,14 +1755,15 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Corporate_Charter">
         <rdf:type rdf:resource="http://www.open.law/ontology#Charter"/>
-        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
-        <dcterms:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dcterms:title>
         <ontology:dateRecentThrough xml:lang="en">2021-01-28</ontology:dateRecentThrough>
         <ontology:effectiveDate xml:lang="en">1996-06-21</ontology:effectiveDate>
+        <dcterms:available xml:lang="en">2021-02-28</dcterms:available>
         <dcterms:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:creator>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/charter</dcterms:identifier>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
         <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
+        <dcterms:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dcterms:title>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</rdfs:label>
     </NamedIndividual>
     
@@ -1698,11 +1788,43 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <ontology:has_document rdf:resource="http://www.open.law/ontology#Mohican_Code_Document"/>
         <ontology:has_document rdf:resource="http://www.open.law/ontology#Mohican_Constitution"/>
         <ontology:has_document rdf:resource="http://www.open.law/ontology#Mohican_Corporate_Charter"/>
-        <dcterms:title xml:lang="en">Stockbridge-Munsee Tribal Law Library</dcterms:title>
+        <ontology:has_document rdf:resource="http://www.open.law/ontology#Resolution-031-20"/>
         <dc:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dc:creator>
         <dc:publisher xml:lang="en">Open Law Library</dc:publisher>
+        <dcterms:title xml:lang="en">Stockbridge-Munsee Tribal Law Library</dcterms:title>
         <rdfs:comment xml:lang="en">This resource represents an electronic version of a tribal code and constitution from the Stockbridge-Munsee Tribal Law Library.</rdfs:comment>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Law Library</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#Resolution-031-20 -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Resolution-031-20">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Resolution"/>
+        <dcterms:available>January 21, 2020</dcterms:available>
+        <ontology:effectiveDate>2021-01-28</ontology:effectiveDate>
+        <dcterms:available>2021-02-28</dcterms:available>
+        <dcterms:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:creator>
+        <dcterms:dateAccepted>2021-01-21</dcterms:dateAccepted>
+        <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/resolutions/2020/031-20</dcterms:identifier>
+        <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
+        <dcterms:rights xml:lang="en">Public Domain</dcterms:rights>
+        <dcterms:subject xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:subject>
+        <dcterms:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution No. 031-20 — Employee Preference Policy</dcterms:title>
+        <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution No. 031-20 — Employee Preference Policy</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.open.law/ontology#031-20 -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#031-20">
+        <rdf:type rdf:resource="http://www.open.law/ontology#Docs"/>
+        <dc:rights xml:lang="en">Public Domain</dc:rights>
+        <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-031-20"/>
+        <dcterms:title>031-20.pdf</dcterms:title>
+        <rdfs:label xml:lang="en">Resolution 031-20 PDF</rdfs:label>
     </NamedIndividual>
     
 
@@ -1725,15 +1847,15 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
-        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">License Document</rdfs:label>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Location">
@@ -1761,8 +1883,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:label xml:lang="en">Rights Statement</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
@@ -1781,8 +1903,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Available</rdfs:label>
         <rdfs:comment xml:lang="en">Date that the resource became or will become available.</rdfs:comment>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/bibliographicCitation">
         <rdfs:label xml:lang="en">Bibliographic Citation</rdfs:label>
@@ -1804,8 +1926,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Created</rdfs:label>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
@@ -1884,8 +2006,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
+        <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/language">
@@ -1939,8 +2061,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label xml:lang="en">Title</rdfs:label>
-        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/type">
@@ -1964,6 +2086,16 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.open.law/ontology#Article"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Chapter"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Section"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Subchapter"/>
+            <rdf:Description rdf:about="http://www.open.law/ontology#Title"/>
+        </members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <members rdf:parseType="Collection">
