@@ -13,7 +13,7 @@
      xmlns:ontology="http://www.open.law/ontology#">
     <Ontology rdf:about="http://www.open.law/ontology">
         <dc:title xml:lang="en">Open Law Library Ontology.</dc:title>
-        <rdfs:comment xml:lang="en">Open Law Library Ontology contains built-in classes and properties that put together the basis of legal entities and their connections.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Open Law Library Ontology contains built-in classes and properties that put together the basis of legal entities and relations between them.</rdfs:comment>
         <rdfs:label xml:lang="en">Open Law Library Ontology</rdfs:label>
     </Ontology>
     
@@ -45,6 +45,7 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Library"/>
     </AnnotationProperty>
     
@@ -108,7 +109,9 @@
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </AnnotationProperty>
     
 
 
@@ -120,7 +123,9 @@
 
     <!-- http://purl.org/dc/elements/1.1/subject -->
 
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </AnnotationProperty>
     
 
 
@@ -627,6 +632,7 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/available">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
     </DatatypeProperty>
     
 
@@ -701,7 +707,9 @@
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
+    </DatatypeProperty>
     
 
 
@@ -709,15 +717,6 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/valid">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    </DatatypeProperty>
-    
-
-
-    <!-- http://www.open.law/ontology#Last_Codified_Document -->
-
-    <DatatypeProperty rdf:about="http://www.open.law/ontology#Last_Codified_Document">
-        <rdfs:comment xml:lang="en">Last codified document for this code document.</rdfs:comment>
-        <rdfs:label xml:lang="en">Last Codified Document</rdfs:label>
     </DatatypeProperty>
     
 
@@ -1802,9 +1801,9 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Resolution-031-20">
         <rdf:type rdf:resource="http://www.open.law/ontology#Resolution"/>
-        <dcterms:available>January 21, 2020</dcterms:available>
         <ontology:effectiveDate>2021-01-28</ontology:effectiveDate>
         <dcterms:available>2021-02-28</dcterms:available>
+        <dcterms:available>January 21, 2020</dcterms:available>
         <dcterms:creator xml:lang="en">Stockbridge-Munsee Community, Wisconsin</dcterms:creator>
         <dcterms:dateAccepted>2021-01-21</dcterms:dateAccepted>
         <dcterms:identifier>https://law.mohican.com/us/nsn/mohican/council/resolutions/2020/031-20</dcterms:identifier>
@@ -1847,13 +1846,13 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
-        <rdfs:label xml:lang="en">License Document</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License Document</rdfs:label>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
@@ -1883,8 +1882,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:label xml:lang="en">Rights Statement</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
@@ -1903,8 +1902,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Available</rdfs:label>
         <rdfs:comment xml:lang="en">Date that the resource became or will become available.</rdfs:comment>
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/bibliographicCitation">
         <rdfs:label xml:lang="en">Bibliographic Citation</rdfs:label>
@@ -1926,8 +1925,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Created</rdfs:label>
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
@@ -1941,8 +1940,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateAccepted">
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dc:description>
-        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
         <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
     </rdf:Description>
@@ -1957,8 +1956,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
         <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a &apos;Date Submitted&apos; may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dc:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/description">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
@@ -2023,8 +2022,8 @@ Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Modified</rdfs:label>
         <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
-        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dc:issued>
+        <dc:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</dc:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dc:issued>
