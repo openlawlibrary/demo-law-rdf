@@ -954,6 +954,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Corporate_Charter_Publication_2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#Charter"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
@@ -970,6 +971,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Corporate_Charter_Publication_2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#Charter"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
@@ -997,6 +999,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Mohican_Law_Library">
         <rdf:type rdf:resource="http://www.open.law/ontology#Library"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <oll:hasPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <oll:hasPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Law Library</dc:title>
@@ -1011,6 +1014,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Publication-2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#Publication"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Mohican_Constitution_Publication-2021-12-27"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Mohican_Corporate_Charter_Publication_2021-12-27"/>
@@ -1028,6 +1032,7 @@
     <!-- http://www.open.law/ontology#Publication-2022-02-08 -->
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Publication-2022-02-08">
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Mohican_Corporate_Charter_Publication_2022-02-08"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2022-02-08"/>
@@ -1045,6 +1050,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Resolution-031-20_Publication-2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#Resolution"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
@@ -1060,6 +1066,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Resolution-034-22_Publication-2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#Resolution"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
@@ -1076,6 +1083,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Resolution-034-22_Publication-2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#Resolution"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
@@ -1091,6 +1099,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Resolution-053-22_Publication-2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#Resolution"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
@@ -1102,10 +1111,19 @@
     
 
 
+    <!-- http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin -->
+
+    <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin">
+        <rdfs:label xml:lang="en">Stockbridge-Munsee Community Wisconsin</rdfs:label>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-01_Publication_2021-12-27 -->
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-01_Publication_2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isVersionOf rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2021-12-27"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
@@ -1122,6 +1140,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-02_Publication_2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isVersionOf rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2022-02-08"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
@@ -1138,6 +1157,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-05_Publication_2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isVersionOf rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2021-12-27"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
@@ -1154,6 +1174,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-17_Publication_2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isVersionOf rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2021-12-27"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
@@ -1170,6 +1191,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-21_Publication_2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isVersionOf rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2022-02-08"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
@@ -1186,6 +1208,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-02-28_Publication_2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isVersionOf rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2022-02-08"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
@@ -1202,6 +1225,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2021-12-27">
         <rdf:type rdf:resource="http://www.open.law/ontology#Code"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <oll:hasDocumentVersion rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-01_Publication_2021-12-27"/>
@@ -1238,6 +1262,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2022-02-08">
         <rdf:type rdf:resource="http://www.open.law/ontology#Code"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <oll:hasDocumentVersion rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Document_Version_2022-01-02_Publication_2022-02-08"/>
@@ -1274,6 +1299,7 @@
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#sourceDocument_031-20">
         <rdf:type rdf:resource="http://www.open.law/ontology#SourceDocument"/>
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-031-20_Publication-2021-12-27"/>
         <dc:title xml:lang="en">031-20.pdf</dc:title>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/adopted/031-20.pdf</oll:url>
@@ -1285,18 +1311,13 @@
     <!-- http://www.open.law/ontology#sourceDocument_034-22 -->
 
     <NamedIndividual rdf:about="http://www.open.law/ontology#sourceDocument_034-22">
+        <dc:creator rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2021-12-27"/>
         <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2022-02-08"/>
         <dc:title xml:lang="en">034-22.pdf</dc:title>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://law.mohican.com/us/nsn/mohican/council/resolutions/2021/adopted/034-22.pdf</oll:url>
         <rdfs:label>Source Document Resolution 034 - 22</rdfs:label>
     </NamedIndividual>
-    
-
-
-    <!-- http://www.open.law/ontology#Stockbridge-Munsee_Community,_Wisconsin -->
-
-    <NamedIndividual rdf:about="http://www.open.law/ontology#Stockbridge-Munsee_Community,_Wisconsin"/>
     
 
 
