@@ -1256,7 +1256,7 @@
     <NamedIndividual rdf:about="http://www.open.law/ontology#sourceDocument_031-20">
         <rdf:type rdf:resource="http://www.open.law/ontology#SourceDocument"/>
         <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-031-20_Publication-2021-12-27"/>
-        <dc:title xml:lang="en">Resolution 031 - 20</dc:title>
+        <dc:title xml:lang="en">031-20.pdf</dc:title>
         <rdfs:label xml:lang="en">Source Document Resolution 031 - 20</rdfs:label>
     </NamedIndividual>
     
@@ -1267,7 +1267,7 @@
     <NamedIndividual rdf:about="http://www.open.law/ontology#sourceDocument_034-22">
         <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2021-12-27"/>
         <dcterms:isFormatOf rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2022-02-08"/>
-        <dc:title xml:lang="en">Resolution 034 - 22</dc:title>
+        <dc:title xml:lang="en">034-22.pdf</dc:title>
         <rdfs:label>Source Document Resolution 034 - 22</rdfs:label>
     </NamedIndividual>
     
