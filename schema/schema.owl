@@ -683,6 +683,15 @@
     
 
 
+    <!-- http://www.open.law/ontology#dateAdopted -->
+
+    <DatatypeProperty rdf:about="http://www.open.law/ontology#dateAdopted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:label xml:lang="en">Date Adopted</rdfs:label>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.open.law/ontology#dateCurrentThrough -->
 
     <DatatypeProperty rdf:about="http://www.open.law/ontology#dateCurrentThrough">
@@ -702,6 +711,14 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">An effective date or as of date is the date upon which something is considered to take effect, which may be a past, present or future date.</rdfs:comment>
         <rdfs:label xml:lang="en">Effective Date</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.open.law/ontology#number -->
+
+    <DatatypeProperty rdf:about="http://www.open.law/ontology#number">
+        <rdfs:domain rdf:resource="http://www.open.law/ontology#Resolution"/>
     </DatatypeProperty>
     
 
@@ -941,8 +958,8 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</dc:title>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
-        <oll:dateCurrentThrough xml:lang="en">2021-01-28</oll:dateCurrentThrough>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
+        <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-28</oll:dateCurrentThrough>
         <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-11-18</oll:effectiveDate>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/constitution/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community - Publication 2021-12-27</rdfs:label>
@@ -959,8 +976,8 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dc:title>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
-        <oll:effectiveDate xml:lang="en">1996-06-21</oll:effectiveDate>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
+        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-06-21</oll:effectiveDate>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/charter/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -976,7 +993,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dc:title>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/charter/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter - Publication 2022-02-08</rdfs:label>
     </NamedIndividual>
@@ -1022,7 +1039,7 @@
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2021-12-27"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2021-12-27"/>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Law Library</dc:title>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/index.rdf</oll:url>
         <rdfs:label>Stockbridge-Munsee Tribal Law Library Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1039,7 +1056,7 @@
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Resolution-053-22_Publication-2022-02-08"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontology#Stockbridge-Munsee_Tribal_Code_Publication_2022-02-08"/>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Law Library</dc:title>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/index.rdf</oll:url>
         <rdfs:label>Stockbridge-Munsee Tribal Law Library Publication 2022-02-08</rdfs:label>
     </NamedIndividual>
@@ -1054,8 +1071,10 @@
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontology#Mohican_Law_Library"/>
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
-        <dcterms:available xml:lang="en">2022-12-27</dcterms:available>
-        <oll:effectiveDate>2021-01-28</oll:effectiveDate>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-27</dcterms:available>
+        <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-05</oll:dateAdopted>
+        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-28</oll:effectiveDate>
+        <oll:number>031-20</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/resolutions/2021/031-20/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution No. 031-20 — Employee Preference Policy - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1071,8 +1090,10 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking Code</dc:title>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
+        <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-05</oll:dateAdopted>
         <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-10</oll:effectiveDate>
+        <oll:number>034-22</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/resolutions/2021/034-22/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking Code - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1088,7 +1109,9 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking  Code</dc:title>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
+        <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-05</oll:dateAdopted>
+        <oll:number>034-22</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/resolutions/2021/034-22/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking Code - Publication 2022-02-08</rdfs:label>
     </NamedIndividual>
@@ -1104,7 +1127,9 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 053-22 - Construction Code</dc:title>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
+        <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-05</oll:dateAdopted>
+        <oll:number>053-22</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/resolutions/2021/053-22/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 053-22 - Construction Code - Publication 2022-02-08</rdfs:label>
     </NamedIndividual>
@@ -1129,7 +1154,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <oll:lastCodifiedDocument rdf:resource="http://www.open.law/ontology#Resolution-031-20_Publication-2021-12-27"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-01</dc:date>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-05</oll:dateCurrentThrough>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/_version/2022-01-01/index.rdf</oll:url>
     </NamedIndividual>
@@ -1146,7 +1171,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <oll:lastCodifiedDocument rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2022-02-08"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-02</dc:date>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-28</oll:dateCurrentThrough>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/_version/2022-01-02/index.rdf</oll:url>
     </NamedIndividual>
@@ -1163,7 +1188,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <oll:lastCodifiedDocument rdf:resource="http://www.open.law/ontology#Resolution-031-20_Publication-2021-12-27"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-05</dc:date>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-05</oll:dateCurrentThrough>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/_version/2022-01-05/index.rdf</oll:url>
     </NamedIndividual>
@@ -1180,7 +1205,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <oll:lastCodifiedDocument rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2021-12-27"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-17</dc:date>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-09</oll:dateCurrentThrough>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/_version/2022-01-17/index.rdf</oll:url>
     </NamedIndividual>
@@ -1197,7 +1222,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <oll:lastCodifiedDocument rdf:resource="http://www.open.law/ontology#Resolution-034-22_Publication-2022-02-08"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-21</dc:date>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-28</oll:dateCurrentThrough>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/_version/2022-01-21/index.rdf</oll:url>
     </NamedIndividual>
@@ -1214,7 +1239,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <oll:lastCodifiedDocument rdf:resource="http://www.open.law/ontology#Resolution-053-22_Publication-2022-02-08"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-28</dc:date>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-28</oll:dateCurrentThrough>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/_version/2022-02-28/index.rdf</oll:url>
     </NamedIndividual>
@@ -1234,7 +1259,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2021-12-27"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Code</dc:title>
-        <dcterms:available xml:lang="en">2021-12-27</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <dcterms:tableOfContents xml:lang="en">Title GOV — Government (§§ GOV.01.01 – GOV.04.05);
       Title ADM — Government Administration (§§ ADM.01.01 – ADM.02.05);
       Title MEM — Tribal Membership (§§ MEM.01.01 – MEM.01.09);
@@ -1251,7 +1276,7 @@
       Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
       Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
       Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
-        <oll:effectiveDate xml:lang="en">0001-01-02</oll:effectiveDate>
+        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0001-01-02</oll:effectiveDate>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/code/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1271,7 +1296,7 @@
         <oll:isPartOfPublication rdf:resource="http://www.open.law/ontology#Publication-2022-02-08"/>
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Code</dc:title>
-        <dcterms:available xml:lang="en">2022-02-08</dcterms:available>
+        <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <dcterms:tableOfContents xml:lang="en">Title GOV — Government (§§ GOV.01.01 – GOV.04.05);
       Title ADM — Government Administration (§§ ADM.01.01 – ADM.02.05);
       Title MEM — Tribal Membership (§§ MEM.01.01 – MEM.01.09);
