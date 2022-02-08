@@ -67,6 +67,17 @@
 
     <ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Publication"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.open.law/ontology#Jurisdiction"/>
     </ObjectProperty>
     
@@ -84,6 +95,14 @@
 
     <ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
     </ObjectProperty>
     
 
@@ -172,6 +191,15 @@
 
     <ObjectProperty rdf:about="http://purl.org/dc/terms/references">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Charter"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Constitution"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Resolution"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.open.law/ontology#SourceDocument"/>
     </ObjectProperty>
     
@@ -290,8 +318,14 @@
 
     <ObjectProperty rdf:about="http://www.open.law/ontology#isPartOfPublication">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#Document"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontology#DocumentVersion"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#DocumentVersion"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.open.law/ontology#Publication"/>
         <rdfs:label xml:lang="en">Is Part Of Publication</rdfs:label>
     </ObjectProperty>
@@ -328,7 +362,20 @@
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Publication"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    </DatatypeProperty>
     
 
 
@@ -391,6 +438,17 @@
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Publication"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
     </DatatypeProperty>
     
@@ -398,13 +456,34 @@
 
     <!-- http://purl.org/dc/elements/1.1/subject -->
 
-    <DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    <DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    </DatatypeProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Publication"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
     </DatatypeProperty>
     
@@ -444,6 +523,14 @@
 
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/available">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     </DatatypeProperty>
     
@@ -676,7 +763,7 @@
     <DatatypeProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontology#Code"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
     </DatatypeProperty>
     
 
@@ -762,6 +849,17 @@
     <!-- http://www.open.law/ontology#url -->
 
     <DatatypeProperty rdf:about="http://www.open.law/ontology#url">
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Document"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Jurisdiction"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Library"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#Publication"/>
+                    <rdf:Description rdf:about="http://www.open.law/ontology#SourceDocument"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </DatatypeProperty>
     
