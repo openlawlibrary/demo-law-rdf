@@ -795,14 +795,14 @@
     
 
 
-    <!-- http://www.open.law/ontologies/oll.owl#effectiveDate -->
+    <!-- http://www.open.law/ontologies/oll.owl#dateEffective -->
 
-    <DatatypeProperty rdf:about="http://www.open.law/ontologies/oll.owl#effectiveDate">
+    <DatatypeProperty rdf:about="http://www.open.law/ontologies/oll.owl#dateEffective">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
         <rdfs:domain rdf:resource="http://www.open.law/ontologies/oll.owl#Document"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">An effective date or as of date is the date upon which something is considered to take effect, which may be a past, present or future date.</rdfs:comment>
-        <rdfs:label xml:lang="en">Effective Date</rdfs:label>
+        <rdfs:label xml:lang="en">Date Effective</rdfs:label>
     </DatatypeProperty>
     
 
@@ -1091,7 +1091,7 @@
         <dc:title xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <oll:dateCurrentThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-28</oll:dateCurrentThrough>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-11-18</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-11-18</oll:dateEffective>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/constitution/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Constitution and By-Laws of the Stockbridge-Munsee Community - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1108,7 +1108,7 @@
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-06-21</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-06-21</oll:dateEffective>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/charter/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1125,7 +1125,7 @@
         <dc:rights xml:lang="en">Public Domain</dc:rights>
         <dc:title xml:lang="en">Stockbridge-Munsee Federal Corporate Charter</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-06-21</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-06-21</oll:dateEffective>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/charter/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Federal Corporate Charter - Publication 2022-02-08</rdfs:label>
     </NamedIndividual>
@@ -1206,7 +1206,7 @@
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution No. 031-20 — Employee Preference Policy - Publication 2021-12-27</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-27</dcterms:available>
         <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-05</oll:dateAdopted>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-28</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-28</oll:dateEffective>
         <oll:number>031-20</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/resolutions/2021/031-20/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution No. 031-20 — Employee Preference Policy - Publication 2021-12-27</rdfs:label>
@@ -1226,7 +1226,7 @@
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking Code</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-27</dcterms:available>
         <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-05</oll:dateAdopted>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-10</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-10</oll:dateEffective>
         <oll:number>034-22</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/resolutions/2021/034-22/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking Code - Publication 2021-12-27</rdfs:label>
@@ -1246,7 +1246,7 @@
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking  Code</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-05</oll:dateAdopted>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-11</oll:dateEffective>
         <oll:number>034-22</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/resolutions/2021/034-22/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 034-22 - Parking Code - Publication 2022-02-08</rdfs:label>
@@ -1265,7 +1265,7 @@
         <dc:title xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 053-22 - Construction Code</dc:title>
         <dcterms:available rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-08</dcterms:available>
         <oll:dateAdopted rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-05</oll:dateAdopted>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-07</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-07</oll:dateEffective>
         <oll:number>053-22</oll:number>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/resolutions/2021/053-22/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Council Resolution N0. 053-22 - Construction Code - Publication 2022-02-08</rdfs:label>
@@ -1426,7 +1426,7 @@
       Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
       Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
       Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0001-01-02</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0001-01-02</oll:dateEffective>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2021-12-27/us/nsn/mohican/council/code/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code - Publication 2021-12-27</rdfs:label>
     </NamedIndividual>
@@ -1463,7 +1463,7 @@
       Title VEH — Vehicles, Roads And Traffic (§§ VEH.01.01 – VEH.02.10);
       Title BUS — Business (§§ BUS.01.01 – BUS.05.05);
       Title TAX — Tax (§§ TAX.01.01 – TAX.02.06);</dcterms:tableOfContents>
-        <oll:effectiveDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0001-01-02</oll:effectiveDate>
+        <oll:dateEffective rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0001-01-02</oll:dateEffective>
         <oll:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://law.mohican.com/_rdf/_publication/2022-02-08/us/nsn/mohican/council/code/index.rdf</oll:url>
         <rdfs:label xml:lang="en">Stockbridge-Munsee Tribal Code - Publication 2022-02-08</rdfs:label>
     </NamedIndividual>
