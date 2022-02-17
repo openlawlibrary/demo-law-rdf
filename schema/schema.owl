@@ -303,17 +303,6 @@
     
 
 
-    <!-- http://www.open.law/ontologies/oll.owl#hasRightsStatement -->
-
-    <ObjectProperty rdf:about="http://www.open.law/ontologies/oll.owl#hasRightsStatement">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.open.law/ontologies/oll.owl#Library"/>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-        <rdfs:label xml:lang="en">Has Rights Statement</rdfs:label>
-    </ObjectProperty>
-    
-
-
     <!-- http://www.open.law/ontologies/oll.owl#isPartOfPublication -->
 
     <ObjectProperty rdf:about="http://www.open.law/ontologies/oll.owl#isPartOfPublication">
@@ -1181,6 +1170,7 @@
     <!-- http://www.open.law/ontologies/oll.owl#Publication-2022-02-08 -->
 
     <NamedIndividual rdf:about="http://www.open.law/ontologies/oll.owl#Publication-2022-02-08">
+        <rdf:type rdf:resource="http://www.open.law/ontologies/oll.owl#Publication"/>
         <dc:creator rdf:resource="http://www.open.law/ontologies/oll.owl#Stockbridge-Munsee_Community_Wisconsin"/>
         <dcterms:isPartOf rdf:resource="http://www.open.law/ontologies/oll.owl#Mohican_Law_Library"/>
         <oll:hasDocument rdf:resource="http://www.open.law/ontologies/oll.owl#Mohican_Corporate_Charter_Publication_2022-02-08"/>
